@@ -24,7 +24,7 @@
 - **用途**: 自動実行環境の構築
 
 #### 1.4 実証実験レポート
-- **ファイル**: `docs/experimental-validation-report-updated.md`
+- **ファイル**: `docs/experimental-validation-report.md`
 - **内容**: RagProtoプロジェクトでの検証結果
 - **用途**: 期待される成果の基準
 
@@ -309,7 +309,7 @@ process-engineering-for-ai-coding/
 │   ├── ai-coding-development-process-v1.1.md
 │   ├── cline-process-engineering-rules.md
 │   ├── cline-custom-instructions.md
-│   ├── experimental-validation-report-updated.md
+│   ├── experimental-validation-report.md
 │   └── reproducibility-validation-plan.md
 ├── templates/
 │   ├── process-engineering/

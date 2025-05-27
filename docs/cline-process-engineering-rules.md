@@ -6,7 +6,7 @@
 
 このルールを適用することで、誰でも論文で提示されたプロセスエンジニアリング手法を実際のソフトウェア開発で再現できます。
 
-**文書フォーマット参照**: 本ルールの実装時は、`docs/document-format-specifications-fixed.md`で定義された標準フォーマットに従って文書を作成してください。
+**文書フォーマット参照**: 本ルールの実装時は、`docs/document-format-specifications.md`で定義された標準フォーマットに従って文書を作成してください。
 
 ## 基本原則
 
@@ -57,7 +57,7 @@
 - 実装方法の言及
 
 ### 標準フォーマット適用
-docs/document-format-specifications-fixed.md の「STEP 0: ゴール定義文書」セクションに従って作成
+docs/document-format-specifications.md の「STEP 0: ゴール定義文書」セクションに従って作成
 
 ### テンプレート
 このプロジェクトは、[対象ユーザー]が[現在の課題]を解決し、[期待する結果]を実現するために、[提供する価値]を提供することを目的とする。
@@ -91,7 +91,7 @@ docs/document-format-specifications-fixed.md の「STEP 0: ゴール定義文書
 - テスト可能な形で記述
 
 ### 標準フォーマット適用
-docs/document-format-specifications-fixed.md の「STEP 1: 要件定義文書」セクションに従って作成
+docs/document-format-specifications.md の「STEP 1: 要件定義文書」セクションに従って作成
 
 ### Mermaid図の必須使用
 ユースケース関係図は以下の形式で作成：
@@ -143,7 +143,7 @@ graph TD
 - チーム技術レベルとの適合性
 
 ### 標準フォーマット適用
-docs/document-format-specifications-fixed.md の「STEP 2: システム設計文書」セクションに従って作成
+docs/document-format-specifications.md の「STEP 2: システム設計文書」セクションに従って作成
 
 ### 必須Mermaid図
 システム全体アーキテクチャ：
@@ -193,7 +193,7 @@ graph TD
 - テスタビリティの確保
 
 ### 標準フォーマット適用
-docs/document-format-specifications-fixed.md の「STEP 3: 詳細設計文書」セクションに従って作成
+docs/document-format-specifications.md の「STEP 3: 詳細設計文書」セクションに従って作成
 
 ### 必須Mermaid図
 クラス依存関係図：
@@ -479,10 +479,10 @@ src/
 
 ### 5. 標準テンプレートの使用
 各段階の文書は以下を参照：
-- STEP 0: docs/document-format-specifications-fixed.md「STEP 0: ゴール定義文書」
-- STEP 1: docs/document-format-specifications-fixed.md「STEP 1: 要件定義文書」
-- STEP 2: docs/document-format-specifications-fixed.md「STEP 2: システム設計文書」
-- STEP 3: docs/document-format-specifications-fixed.md「STEP 3: 詳細設計文書」
+- STEP 0: docs/document-format-specifications.md「STEP 0: ゴール定義文書」
+- STEP 1: docs/document-format-specifications.md「STEP 1: 要件定義文書」
+- STEP 2: docs/document-format-specifications.md「STEP 2: システム設計文書」
+- STEP 3: docs/document-format-specifications.md「STEP 3: 詳細設計文書」
 ```
 
 ## 品質管理ルール

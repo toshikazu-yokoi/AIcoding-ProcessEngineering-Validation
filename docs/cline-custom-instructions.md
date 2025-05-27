@@ -6,7 +6,7 @@
 
 論文の理論を実際のソフトウェア開発で再現し、その有効性を検証するために使用します。
 
-**文書フォーマット統合**: 本インストラクションは、`docs/document-format-specifications-fixed.md`で定義された標準フォーマットと、`docs/cline-process-engineering-rules-updated.md`で定義された実装ルールを統合しています。
+**文書フォーマット統合**: 本インストラクションは、`docs/document-format-specifications.md`で定義された標準フォーマットと、`docs/cline-process-engineering-ruless.md`で定義された実装ルールを統合しています。
 
 ## カスタムインストラクション設定
 
@@ -33,7 +33,7 @@
    - 品質基準（テストカバレッジ90%以上等）を厳守する
 
 4. **文書フォーマット統一**
-   - 全文書は標準フォーマット（docs/document-format-specifications-fixed.md）に準拠
+   - 全文書は標準フォーマット（docs/document-format-specifications.md）に準拠
    - メタデータセクション、完了確認チェックリストを必ず含める
    - Mermaid記法を使用した図表作成（4つのバッククォートでネスト）
    - トレーサビリティマトリクスの維持
@@ -221,8 +221,8 @@
 ## 参照文書
 
 実装時は以下の文書を必ず参照:
-- docs/document-format-specifications-fixed.md（文書フォーマット仕様）
-- docs/cline-process-engineering-rules-updated.md（実装ルール詳細）
+- docs/document-format-specifications.md（文書フォーマット仕様）
+- docs/cline-process-engineering-ruless.md（実装ルール詳細）
 
 このプロセスを厳密に遵守し、論文で提示された手法の完全な再現を実現してください。
 ```
@@ -238,7 +238,7 @@
 ## 実行指示
 1. 必ずSTEP 0から開始し、順次STEP 7まで実行してください
 2. 各段階で必須成果物をすべて作成してください
-3. 全文書は標準フォーマット（docs/document-format-specifications-fixed.md）に準拠してください
+3. 全文書は標準フォーマット（docs/document-format-specifications.md）に準拠してください
 4. ファイル単位タスク管理を厳密に適用してください
 5. 品質基準を満たすまで各段階を完了させないでください
 6. Mermaid図は4つのバッククォート（````）でネストしてください
@@ -269,7 +269,7 @@
   "cline.processEngineering.enabled": true,
   "cline.processEngineering.strictMode": true,
   "cline.processEngineering.documentFormat": {
-    "specificationFile": "docs/document-format-specifications-fixed.md",
+    "specificationFile": "docs/document-format-specifications.md",
     "enforceFormat": true,
     "mermaidNesting": "quadruple-backticks"
   },
@@ -299,8 +299,8 @@
 ```
 project-root/
 ├── docs/
-│   ├── document-format-specifications-fixed.md    # 文書フォーマット仕様
-│   ├── cline-process-engineering-rules-updated.md # 実装ルール
+│   ├── document-format-specifications.md    # 文書フォーマット仕様
+│   ├── cline-process-engineering-ruless.md # 実装ルール
 │   ├── goal-statement.md                          # STEP 0
 │   ├── stakeholders.md
 │   ├── constraints.md
@@ -366,8 +366,8 @@ touch docs/constraints.md
 touch docs/traceability-matrix.md
 
 # 文書フォーマット仕様とルールファイルをコピー
-cp templates/process-engineering/document-format-specifications-fixed.md docs/
-cp templates/process-engineering/cline-process-engineering-rules-updated.md docs/
+cp templates/process-engineering/document-format-specifications.md docs/
+cp templates/process-engineering/cline-process-engineering-ruless.md docs/
 
 # テンプレートファイルコピー
 cp templates/process-engineering/templates/* docs/
@@ -377,8 +377,8 @@ cat > .cline-config.json << EOF
 {
   "processEngineering": {
     "enabled": true,
-    "documentFormat": "docs/document-format-specifications-fixed.md",
-    "implementationRules": "docs/cline-process-engineering-rules-updated.md",
+    "documentFormat": "docs/document-format-specifications.md",
+    "implementationRules": "docs/cline-process-engineering-ruless.md",
     "strictMode": true
   }
 }
@@ -586,7 +586,7 @@ ${this.results.errors.length > 0 ?
 
 ## 改善推奨事項
 ${this.results.failed > 0 ? `
-1. docs/document-format-specifications-fixed.md を参照して標準フォーマットを確認
+1. docs/document-format-specifications.md を参照して標準フォーマットを確認
 2. メタデータセクションの追加
 3. Mermaid図の4つのバッククォートでのネスト
 4. 完了確認チェックリストの追加
@@ -621,8 +621,8 @@ class TaskManager {
   constructor() {
     this.tasks = [];
     this.taskIdCounter = 1;
-    this.documentFormatSpec = 'docs/document-format-specifications-fixed.md';
-    this.implementationRules = 'docs/cline-process-engineering-rules-updated.md';
+    this.documentFormatSpec = 'docs/document-format-specifications.md';
+    this.implementationRules = 'docs/cline-process-engineering-ruless.md';
   }
 
   // ファイル単位タスク作成（文書フォーマット統合版）

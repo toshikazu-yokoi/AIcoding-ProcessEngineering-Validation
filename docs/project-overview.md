@@ -28,7 +28,7 @@
 - **用途**: 実装時の詳細仕様参照
 
 #### 1.3 実験検証レポート
-- **ファイル**: `experimental-validation-report-updated.md`
+- **ファイル**: `experimental-validation-report.md`
 - **内容**: 既存の実験結果と検証データ
 - **用途**: 比較検証のベースライン
 
@@ -52,17 +52,17 @@
 ### 3. 実装支援文書
 
 #### 3.1 文書フォーマット仕様
-- **ファイル**: `document-format-specifications-fixed.md`
+- **ファイル**: `document-format-specifications.md`
 - **内容**: 全文書の標準フォーマット定義（Mermaid記法修正版）
 - **用途**: 文書作成時の標準テンプレート
 
 #### 3.2 実装ルール
-- **ファイル**: `cline-process-engineering-rules-updated.md`
+- **ファイル**: `cline-process-engineering-ruless.md`
 - **内容**: Cline AIエージェント用の詳細実装ルール
 - **用途**: 自動化実装の指針
 
 #### 3.3 カスタムインストラクション
-- **ファイル**: `cline-custom-instructions-updated.md`
+- **ファイル**: `cline-custom-instructions.md`
 - **内容**: Cline AIエージェント用のカスタムインストラクション
 - **用途**: AI実装の自動化設定
 

@@ -10,9 +10,16 @@
 
 ```
 docs/
+├── project-overview.md                        # プロジェクト文書概要
 ├── document-format-specifications-fixed.md    # 文書フォーマット仕様
 ├── cline-process-engineering-rules-updated.md # 実装ルール
 ├── cline-custom-instructions-updated.md       # カスタムインストラクション
+├── human-vs-ai-coding-process-engineering-paper.md # 論文本体
+├── ai-coding-development-process-v1.1.md      # プロセス体系文書
+├── experimental-validation-report-updated.md  # 実験検証レポート
+├── reproducibility-validation-plan.md         # 再現性検証計画
+├── related-research-analysis.md               # 関連研究分析
+├── academic-publication-guide.md              # 学術出版ガイド
 ├── goal-statement.md                          # STEP 0: ゴール定義
 ├── stakeholders.md
 ├── constraints.md
@@ -72,6 +79,26 @@ tests/
 └── e2e/         # E2Eテスト
 ```
 
+## 配置済み文書の概要
+
+### 1. 論文・研究文書
+- **論文本体**: プロセスエンジニアリングアプローチによるAIコーディング手法の理論的基盤
+- **プロセス体系文書**: 7段階プロセスの詳細定義と実装ガイドライン
+- **実験検証レポート**: 既存の実験結果と検証データ
+
+### 2. 検証・分析文書
+- **再現性検証計画**: 論文手法の再現性検証のための詳細計画
+- **関連研究分析**: 関連研究の分析と本手法の位置づけ
+- **学術出版ガイド**: 学術論文としての出版に向けたガイドライン
+
+### 3. 実装支援文書
+- **文書フォーマット仕様**: 全文書の標準フォーマット定義（Mermaid記法修正版）
+- **実装ルール**: Cline AIエージェント用の詳細実装ルール
+- **カスタムインストラクション**: Cline AIエージェント用のカスタムインストラクション
+
+### 4. プロジェクト管理文書
+- **プロジェクト文書概要**: 配置済み文書の一覧と関連性の可視化
+
 ## 検証目的
 
 ### 1. プロセス再現性の検証
@@ -98,6 +125,11 @@ tests/
 - セキュリティ脆弱性0件
 - 文書フォーマット準拠100%
 
+### 5. 学術的価値の検証
+- 論文手法の実用性証明
+- 定量的な効果測定データの収集
+- 学術論文としての発表準備
+
 ## 使用方法
 
 ### 1. 初期設定
@@ -106,21 +138,38 @@ tests/
 # プロジェクトディレクトリに移動
 cd C:\work\git\ProcessEngineering-ValidationProject
 
-# Git初期化
-git init
+# Git初期化（既に完了）
+git status
 
-# 初期コミット
-git add .
-git commit -m "feat: プロセスエンジニアリング検証プロジェクト初期化"
+# 文書確認
+ls docs/
 ```
 
-### 2. Cline設定
+### 2. 理論理解
+
+1. **論文本体**を読み、理論的基盤を理解
+   - `docs/human-vs-ai-coding-process-engineering-paper.md`
+2. **関連研究分析**で学術的位置づけを確認
+   - `docs/related-research-analysis.md`
+3. **プロセス体系文書**で実装詳細を把握
+   - `docs/ai-coding-development-process-v1.1.md`
+
+### 3. 実装準備
+
+1. **文書フォーマット仕様**で標準化ルールを確認
+   - `docs/document-format-specifications-fixed.md`
+2. **実装ルール**で詳細な実装方針を理解
+   - `docs/cline-process-engineering-rules-updated.md`
+3. **カスタムインストラクション**でAI設定を準備
+   - `docs/cline-custom-instructions-updated.md`
+
+### 4. Cline設定
 
 1. `docs/cline-custom-instructions-updated.md`の内容をClineのカスタムインストラクションに設定
 2. `docs/cline-process-engineering-rules-updated.md`を参照ルールとして設定
 3. `docs/document-format-specifications-fixed.md`を文書フォーマット仕様として設定
 
-### 3. 検証実行
+### 5. 検証実行
 
 ```
 プロセスエンジニアリングアプローチを使用してソフトウェア開発を行います。
@@ -142,6 +191,21 @@ git commit -m "feat: プロセスエンジニアリング検証プロジェク�
 
 開始してください。
 ```
+
+### 6. 検証結果の分析
+
+1. **再現性検証計画**に従って検証を実行
+   - `docs/reproducibility-validation-plan.md`
+2. **実験検証レポート**と結果を比較
+   - `docs/experimental-validation-report-updated.md`
+3. 新たな検証データを蓄積
+
+### 7. 成果発表準備
+
+1. **学術出版ガイド**に従って成果をまとめ
+   - `docs/academic-publication-guide.md`
+2. 論文として発表準備
+3. 学術コミュニティへの貢献
 
 ## 検証項目
 
@@ -194,7 +258,7 @@ git commit -m "feat: プロセスエンジニアリング検証プロジェク�
 #### 文書品質
 - [ ] 全文書にメタデータセクション存在
 - [ ] 完了確認チェックリスト存在
-- [ ] Mermaid図の正しいネスト
+- [ ] Mermaid図の正しいネスト（4つのバッククォート）
 - [ ] 表形式の統一
 - [ ] トレーサビリティの確保
 
@@ -210,6 +274,12 @@ git commit -m "feat: プロセスエンジニアリング検証プロジェク�
 - [ ] ファイル単位タスク管理の実装
 - [ ] Issue管理の統合
 - [ ] 自動化チェックポイントの設定
+
+#### 学術品質
+- [ ] 論文理論との整合性確認
+- [ ] 実験データの収集・分析
+- [ ] 再現性の確保
+- [ ] 学術発表準備の完了
 
 ## 期待される成果
 
@@ -231,6 +301,16 @@ git commit -m "feat: プロセスエンジニアリング検証プロジェク�
 - 開発効率の定量的評価
 - 改善点の特定と記録
 
+### 4. 学術的成果
+- 論文手法の実用性証明
+- 定量的な効果測定データ
+- 学術論文としての発表
+- AI開発手法の標準化への貢献
+
+## 文書間の関連性
+
+詳細な文書間の関連性については、`docs/project-overview.md`を参照してください。理論基盤、実装仕様、検証・評価の3つのカテゴリに分類された文書群が、どのように相互に関連し合っているかが可視化されています。
+
 ## 注意事項
 
 1. **段階の飛び級禁止**: 必ずSTEP 0から順次実行
@@ -238,5 +318,13 @@ git commit -m "feat: プロセスエンジニアリング検証プロジェク�
 3. **品質基準の妥協禁止**: 設定された品質基準を必ず達成
 4. **文書フォーマットの遵守**: 標準フォーマットに完全準拠
 5. **トレーサビリティの確保**: 全工程で完全な追跡可能性を維持
+6. **学術的厳密性の維持**: 論文理論との整合性を常に確認
 
-このプロジェクトを通じて、プロセスエンジニアリング手法の有効性を技術的に検証し、論文の理論を実践で証明します。
+## プロジェクトの意義
+
+このプロジェクトを通じて、プロセスエンジニアリング手法の有効性を技術的に検証し、論文の理論を実践で証明します。さらに、得られた成果を学術論文として発表することで、AI開発手法の標準化と学術コミュニティへの貢献を目指します。
+
+**検証環境**: 完全に構築済み  
+**文書体系**: 理論・実装・検証・発表の包括的文書群  
+**品質保証**: 自動化チェックと手動検証の統合  
+**学術価値**: 国際会議・ジャーナル発表レベルの研究基盤

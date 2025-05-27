@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "本研究を引用する場合は、以下の情報を使用してください。"
+authors:
+- family-names: "Yokoi"
+  given-names: "Toshikazu"
+  affiliation: "Innovative Solutions Inc."
+title: "人間によるコーディングとAIコーディングの違い：プロセスエンジニアリングアプローチによる体系化"
+version: 1.0.0
+date-released: 2025-05-27
+url: "https://github.com/toshikazu-yokoi/AIcoding-ProcessEngineering-Validation"
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Yokoi"
+    given-names: "Toshikazu"
+    affiliation: "Innovative Solutions Inc."
+  title: "人間によるコーディングとAIコーディングの違い：プロセスエンジニアリングアプローチによる体系化"
+  journal: "ジャーナル名"
+  year: 2025
+  volume: 1
+  issue: 1
+  start: 1
+  end: 20
+  doi: "10.XXXX/XXXXX"

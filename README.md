@@ -1,5 +1,8 @@
 # プロセスエンジニアリング検証プロジェクト
 
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.PENDING.svg)](https://doi.org/10.5281/zenodo.PENDING)
+
 ## 概要
 
 このプロジェクトは、「人間によるコーディングとAIコーディングの違い：プロセスエンジニアリングアプローチによる体系化」論文で提示された手法の技術検証を目的としています。
@@ -61,7 +64,7 @@ docs/
 [docs_experimental-validation-report]: /docs/experimental-validation-report.md
 [docs_reproducibility-validation-plan]: /docs/reproducibility-validation-plan.md
 [docs_related-research-analysis]: /docs/related-research-analysis.md
-[docs_academic-publication-guide]: /docs/academic-publication-guide.md 
+[docs_academic-publication-guide]: /docs/academic-publication-guide.md
 
 ### ソースコード構造
 
@@ -335,7 +338,20 @@ ls docs/
 
 このプロジェクトを通じて、プロセスエンジニアリング手法の有効性を技術的に検証し、論文の理論を実践で証明します。さらに、得られた成果を学術論文として発表することで、AI開発手法の標準化と学術コミュニティへの貢献を目指します。
 
-**検証環境**: 完全に構築済み  
-**文書体系**: 理論・実装・検証・発表の包括的文書群  
-**品質保証**: 自動化チェックと手動検証の統合  
+**検証環境**: 完全に構築済み
+**文書体系**: 理論・実装・検証・発表の包括的文書群
+**品質保証**: 自動化チェックと手動検証の統合
 **学術価値**: 国際会議・ジャーナル発表レベルの研究基盤
+
+## ライセンス
+
+このプロジェクトは [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/) の下で公開されています。
+
+### 利用条件
+- ✅ **学術研究・教育目的での利用**: 自由に利用可能
+- ✅ **改変・再配布**: 同じライセンス条件下で可能
+- ✅ **引用**: 適切な引用を行えば利用可能
+- ❌ **商用利用**: 禁止
+
+詳細は [COPYRIGHT.md](COPYRIGHT.md) をご確認ください。
+

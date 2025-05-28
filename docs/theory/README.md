@@ -19,8 +19,12 @@
 ### 1. 論文・理論文書
 | ファイル名 | 種別 | 説明 | ステータス |
 |------------|------|------|----------|
-| [human-vs-ai-coding-process-engineering-paper.md](human-vs-ai-coding-process-engineering-paper.md) | 学術論文 | プロセスエンジニアリングアプローチによるAIコーディング手法の理論的基盤 | 査読準備中 |
-| [ai-coding-development-process-v1.1.md](ai-coding-development-process-v1.1.md) | 技術仕様書 | 7段階プロセスの詳細仕様と実装ガイドライン | 完成 |
+| [human-vs-ai-coding-process-engineering-paper-v1.1.md](human-vs-ai-coding-process-engineering-paper-v1.1.md) | 学術論文 | 段階的タスク管理アプローチによるAIコーディング手法の理論的基盤と実証 | 完成 |
+| [ai-coding-development-process-v1.2-part1.md](ai-coding-development-process-v1.2-part1.md) | 技術仕様書 | 段階的タスク管理アプローチの詳細仕様（Part 1/3） | 完成 |
+| [ai-coding-development-process-v1.2-part2.md](ai-coding-development-process-v1.2-part2.md) | 技術仕様書 | 段階的タスク管理アプローチの詳細仕様（Part 2/3） | 完成 |
+| [ai-coding-development-process-v1.2-part3.md](ai-coding-development-process-v1.2-part3.md) | 技術仕様書 | 段階的タスク管理アプローチの詳細仕様（Part 3/3） | 完成 |
+| [categorical-task-management-guide.md](categorical-task-management-guide.md) | 実装ガイド | 段階的タスク管理アプローチの実践的実装ガイド | 完成 |
+| [quality-assurance-integration.md](quality-assurance-integration.md) | 実装ガイド | 多層品質保証システムの理論と実装方法 | 完成 |
 
 ### 2. 実験・検証文書
 | ファイル名 | 種別 | 説明 | ステータス |

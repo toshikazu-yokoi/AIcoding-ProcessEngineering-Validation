@@ -1,5 +1,9 @@
 # Cline用プロセスエンジニアリング実装ルール（更新版）
 
+**著者**: 横井 利和 (Yokoi Toshikazu)  
+**所属**: 株式会社イノベーティブ・ソリューションズ (Innovative Solutions Inc.)  
+**連絡先**: yokoi@innovative-solutions.co.jp
+
 ## 概要
 
 本ルールファイルは、「人間によるコーディングとAIコーディングの違い：プロセスエンジニアリングアプローチによる体系化」論文の理論を、Cline AIエージェントで再現するための具体的な実装ルールです。
@@ -96,6 +100,7 @@ docs/document-format-specifications.md の「STEP 1: 要件定義文書」セク
 ### Mermaid図の必須使用
 ユースケース関係図は以下の形式で作成：
 
+````markdown
 ```mermaid
 graph TD
     A[アクター1] --> UC1[UC-001: ユースケース1]
@@ -105,6 +110,7 @@ graph TD
     UC1 --> UC2
     UC2 --> UC3
 ```
+````
 
 ### テンプレート
 **UC-001: [ユースケース名]**
@@ -148,6 +154,7 @@ docs/document-format-specifications.md の「STEP 2: システム設計文書」
 ### 必須Mermaid図
 システム全体アーキテクチャ：
 
+````markdown
 ```mermaid
 graph TD
     UI["Web UI (Next.js)"]
@@ -159,6 +166,7 @@ graph TD
     API -->|Query| DB
     API -->|API Call| EXT
 ```
+````
 
 ### テンプレート
 | レイヤー | 技術 | バージョン | 選定理由 | 代替案 | リスク |
@@ -198,6 +206,7 @@ docs/document-format-specifications.md の「STEP 3: 詳細設計文書」セク
 ### 必須Mermaid図
 クラス依存関係図：
 
+````markdown
 ```mermaid
 classDiagram
     class QueryController {
@@ -219,6 +228,7 @@ classDiagram
     QueryController --> LangChainRouter
     QueryController --> Logger
 ```
+````
 
 ### テンプレート
 **クラス名**: UserService
@@ -302,7 +312,7 @@ classDiagram
 標準的な開発計画文書フォーマットに従って作成
 
 ### テンプレート
-```
+```text
 src/
 ├── presentation/     # プレゼンテーション層
 │   ├── controllers/  # REST APIコントローラ
@@ -321,51 +331,67 @@ src/
 ### STEP 6: ToDoリスト作成
 
 #### 必須成果物
-1. **ファイル単位タスクリスト** (`docs/tasks/task-list.md`)
-2. **タスク管理表** (`docs/tasks/task-management.md`)
-3. **Issue・仕様書セット** (`docs/tasks/specifications/`)
+1. **実装ToDoリスト** (`docs/todo-list.md`) - 論文想定の階層構造チェックボックス形式
+2. **タスク管理表** (`docs/tasks/task-management.md`) - 進捗管理用
+3. **Issue・仕様書セット** (`docs/tasks/specifications/`) - 各タスクの詳細仕様
 
 #### 文書フォーマット要件
-- **タスクリスト**: 標準表形式を使用
+- **ToDoリスト**: 階層構造チェックボックス形式（論文想定）
 - **タスクID**: 統一された命名規則
-- **仕様書**: 各タスクに対応する詳細仕様
+- **7つの標準サブタスク**: 各メインタスクに必須
+- **進捗可視化**: チェックボックスによる完了状況管理
 
 #### 実装ルール
 ```markdown
-## ファイル単位タスク分割ルール
+## 階層構造ToDoリスト作成ルール
+
+### 基本構造
+- **メインタスク**: ファイル単位（TSK-XXX-XXX-FileName）
+- **サブタスク**: 7つの標準サブタスク（必須）
+- **詳細サブタスク**: 各標準サブタスクの具体的作業項目
 
 ### タスクID命名規則
 **形式**: TSK-{連番3桁}-{レイヤー}-{ファイル名}
 
 **レイヤー略語**:
-- CTL: Controller
-- SVC: Service  
-- ENT: Entity
-- REP: Repository
+- ENT: Entity（エンティティ）
+- SVC: Service（サービス）
+- REP: Repository（リポジトリ）
+- CTL: Controller（コントローラ）
 - DTO: Data Transfer Object
-- UTL: Utility
+- UTL: Utility（ユーティリティ）
 
-### 必須要素
-- 実装対象ファイルの明確化
-- 依存関係の順序付け
-- 優先度の設定
-- 所要時間の見積もり
+### 7つの標準サブタスク（必須）
+1. **仕様確認・設計理解**
+2. **コーディング**
+3. **テストコーディング**
+4. **単体テスト実行**
+5. **リポジトリコミット**
+6. **ToDoチェック**
+7. **Issueクローズ**
 
 ### 品質基準
-- 1タスク = 1ファイル
-- 依存関係の循環禁止
-- 並行実行可能性の考慮
+- 1メインタスク = 1ファイル
+- 全サブタスク完了でタスク完了
+- チェックボックスによる進捗管理
+- 依存関係の明確化
 
 ### 標準フォーマット適用
-標準的なタスク管理文書フォーマットに従って作成
+docs/templates/step6-todo-list-template.md を使用
 
-### テンプレート
-**タスクID**: TSK-001-CTL-UserController
-**ファイル**: src/presentation/controllers/UserController.ts
-**依存タスク**: TSK-002-SVC-UserService
-**優先度**: 高
-**見積時間**: 3時間
-**担当者**: [担当者名]
+### テンプレート例
+- [ ] **TSK-001-ENT-User**: User.ts作成・検証
+  - [ ] 仕様確認・設計理解
+    - [ ] 詳細設計文書の確認
+    - [ ] インターフェース仕様の理解
+  - [ ] コーディング
+    - [ ] クラス/関数の実装
+    - [ ] エラーハンドリングの実装
+  - [ ] テストコーディング
+  - [ ] 単体テスト実行
+  - [ ] リポジトリコミット
+  - [ ] ToDoチェック
+  - [ ] Issueクローズ
 ```
 
 ### STEP 7: コーディング・テスト実行
@@ -571,13 +597,11 @@ src/
 ## コミットメッセージ規約
 
 ### 基本形式
-```
 {type}(#{issue_number}): {概要}
 
 {詳細説明}
 
 Closes #{issue_number}
-```
 
 ### タイプ定義
 - **feat**: 新機能実装
@@ -589,7 +613,6 @@ Closes #{issue_number}
 - **perf**: パフォーマンス改善
 
 ### 例
-```
 feat(#123): UserControllerの実装
 
 - ユーザー登録APIの実装
@@ -599,7 +622,6 @@ feat(#123): UserControllerの実装
 - 標準フォーマットに準拠した文書作成
 
 Closes #123
-```
 ```
 
 ## トレーサビリティ管理

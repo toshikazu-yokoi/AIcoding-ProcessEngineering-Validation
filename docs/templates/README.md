@@ -49,6 +49,8 @@
 ### STEP 6: ToDoリスト作成文書
 | ファイル名 | 用途 | 説明 |
 |------------|------|------|
+| [step6-todo-list-template.md](step6-todo-list-template.md) | ToDoリストテンプレート | 段階的タスク管理対応のToDoリスト |
+| [step6-todo-creation-guide.md](step6-todo-creation-guide.md) | ToDoリスト作成ガイド | 効果的なToDoリスト作成の手順 |
 | [step6-task-list-template.md](step6-task-list-template.md) | ファイル単位タスクリスト | タスク一覧と依存関係 |
 | [step6-task-management-template.md](step6-task-management-template.md) | タスク管理表 | Issue管理と標準サブタスク |
 | [step6-task-specification-template.md](step6-task-specification-template.md) | タスク仕様書 | 個別タスクの詳細仕様 |

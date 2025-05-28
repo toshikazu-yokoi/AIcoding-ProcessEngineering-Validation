@@ -16,7 +16,7 @@
 - 品質ゲートの自動チェック
 
 ### 1.2 ワークフロー
-````mermaid
+
 ```mermaid
 flowchart TD
     A[タスク選択] --> B[Issue作成]
@@ -30,7 +30,6 @@ flowchart TD
     I --> F
     H --> J[Issue クローズ]
 ```
-````
 
 ## 2. Issue管理
 

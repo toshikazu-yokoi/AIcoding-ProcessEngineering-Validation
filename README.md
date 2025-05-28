@@ -13,58 +13,82 @@
 
 ```
 docs/
-├── project-overview.md                        # プロジェクト文書概要
-├── document-format-specifications.md    # 文書フォーマット仕様
-├── cline-process-engineering-rules.md # 実装ルール
-├── cline-custom-instructions.md       # カスタムインストラクション
-├── human-vs-ai-coding-process-engineering-paper.md # 論文本体
-├── ai-coding-development-process-v1.1.md      # プロセス体系文書
-├── experimental-validation-report.md  # 実験検証レポート
-├── reproducibility-validation-plan.md         # 再現性検証計画
-├── related-research-analysis.md               # 関連研究分析
-├── academic-publication-guide.md              # 学術出版ガイド
-├── goal-statement.md                          # STEP 0: ゴール定義
-├── stakeholders.md
-├── constraints.md
-├── requirements/                              # STEP 1: 要件定義
-│   ├── use-cases.md
-│   ├── non-functional.md
-│   └── specification.md
-├── design/                                    # STEP 2: システム設計
-│   ├── system-architecture.md
-│   └── tech-stack.md
-├── detailed-design/                           # STEP 3: 詳細設計
-│   ├── classes.md
-│   └── interfaces.md
-├── test-design/                               # STEP 4: テスト設計
-│   ├── strategy.md
-│   ├── targets.md
-│   └── test-cases.md
-├── implementation/                            # STEP 5: 開発計画
-│   ├── components.md
-│   ├── schedule.md
-│   └── directory-structure.md
-├── tasks/                                     # STEP 6: ToDoリスト作成
-│   ├── task-list.md
-│   ├── task-management.md
-│   └── specifications/
-├── execution/                                 # STEP 7: コーディング・テスト実行
-│   ├── progress-log.md
-│   ├── quality-records.md
-│   └── completion-report.md
-└── traceability-matrix.md                     # 全体トレーサビリティ
+├── theory/                                    # 理論・研究系文書
+│   ├── human-vs-ai-coding-process-engineering-paper.md # 論文本体
+│   ├── ai-coding-development-process-v1.1.md # プロセス体系文書
+│   ├── experimental-validation-report.md     # 実験検証レポート
+│   ├── reproducibility-validation-plan.md    # 再現性検証計画
+│   ├── related-research-analysis.md          # 関連研究分析
+│   └── academic-publication-guide.md         # 学術出版ガイド
+├── templates/                                 # 再利用可能テンプレート
+│   ├── README.md                             # テンプレート一覧とガイド
+│   ├── document-format-specifications.md     # 文書フォーマット仕様
+│   ├── cline-process-engineering-rules.md    # 実装ルール
+│   ├── cline-custom-instructions.md          # カスタムインストラクション
+│   ├── header-template.md                    # ヘッダーテンプレート
+│   ├── step0-goal-statement-template.md      # STEP 0: ゴール定義
+│   ├── step0-stakeholders-template.md        # ステークホルダー一覧
+│   ├── step0-constraints-template.md         # 制約条件リスト
+│   ├── step1-use-cases-template.md           # STEP 1: ユースケース一覧
+│   ├── step1-non-functional-template.md      # 非機能要件リスト
+│   ├── step1-requirements-specification-template.md # 要求仕様書
+│   ├── step2-system-architecture-template.md # STEP 2: システム構成図
+│   ├── step2-tech-stack-template.md          # 技術選定・依存関係定義書
+│   ├── step3-class-design-template.md        # STEP 3: クラス設計表
+│   ├── step3-interfaces-template.md          # メソッドインターフェースリスト
+│   ├── step4-test-strategy-template.md       # STEP 4: テスト戦略書
+│   ├── step4-test-targets-template.md        # テスト対象一覧
+│   ├── step4-test-cases-template.md          # テストケース定義書
+│   ├── step5-components-template.md          # STEP 5: 実装コンポーネント一覧
+│   ├── step5-schedule-template.md            # 開発工程表
+│   ├── step5-directory-structure-template.md # ディレクトリ構造マップ
+│   ├── step6-task-list-template.md           # STEP 6: ファイル単位タスクリスト
+│   ├── step6-task-management-template.md     # タスク管理表
+│   ├── step6-task-specification-template.md  # タスク仕様書
+│   ├── step7-progress-template.md            # STEP 7: 実行ログ・進捗管理
+│   ├── step7-deliverables-template.md        # 成果物・品質記録
+│   └── step7-final-system-template.md        # 完成システム
+└── project-specific/                          # プロジェクト固有文書
+    ├── project-overview.md                   # プロジェクト文書概要
+    ├── augment-user-guidelines.md            # ユーザーガイドライン
+    ├── design/                               # STEP 2: システム設計
+    │   ├── system-architecture.md
+    │   └── tech-stack.md
+    ├── detailed-design/                      # STEP 3: 詳細設計
+    │   ├── classes.md
+    │   └── interfaces.md
+    ├── requirements/                         # STEP 1: 要件定義
+    │   ├── use-cases.md
+    │   ├── non-functional.md
+    │   └── specification.md
+    ├── test-design/                          # STEP 4: テスト設計
+    │   ├── strategy.md
+    │   ├── targets.md
+    │   └── test-cases.md
+    ├── implementation/                       # STEP 5: 開発計画
+    │   ├── components.md
+    │   ├── schedule.md
+    │   └── directory-structure.md
+    ├── tasks/                                # STEP 6: ToDoリスト作成
+    │   ├── task-list.md
+    │   ├── task-management.md
+    │   └── specifications/
+    └── execution/                            # STEP 7: コーディング・テスト実行
+        ├── progress-log.md
+        ├── quality-records.md
+        └── completion-report.md
 ```
 
-[docs_project-overview]: /docs/project-overview.md
-[docs_document-format-specifications]: /docs/document-format-specifications.md
-[docs_cline-process-engineering-rules]: /docs/cline-process-engineering-rules.md
-[docs_cline-custom-instructions]: /docs/cline-custom-instructions.md
-[docs_human-vs-ai-coding-process-engineering-paper]: /docs/human-vs-ai-coding-process-engineering-paper.md
-[docs_ai-coding-development-process]: /docs/ai-coding-development-process-v1.1.md
-[docs_experimental-validation-report]: /docs/experimental-validation-report.md
-[docs_reproducibility-validation-plan]: /docs/reproducibility-validation-plan.md
-[docs_related-research-analysis]: /docs/related-research-analysis.md
-[docs_academic-publication-guide]: /docs/academic-publication-guide.md
+[docs_project-overview]: /docs/project-specific/project-overview.md
+[docs_document-format-specifications]: /docs/templates/document-format-specifications.md
+[docs_cline-process-engineering-rules]: /docs/templates/cline-process-engineering-rules.md
+[docs_cline-custom-instructions]: /docs/templates/cline-custom-instructions.md
+[docs_human-vs-ai-coding-process-engineering-paper]: /docs/theory/human-vs-ai-coding-process-engineering-paper.md
+[docs_ai-coding-development-process]: /docs/theory/ai-coding-development-process-v1.1.md
+[docs_experimental-validation-report]: /docs/theory/experimental-validation-report.md
+[docs_reproducibility-validation-plan]: /docs/theory/reproducibility-validation-plan.md
+[docs_related-research-analysis]: /docs/theory/related-research-analysis.md
+[docs_academic-publication-guide]: /docs/theory/academic-publication-guide.md
 
 ### ソースコード構造
 
@@ -354,4 +378,3 @@ ls docs/
 - ❌ **商用利用**: 禁止
 
 詳細は [COPYRIGHT.md](COPYRIGHT.md) をご確認ください。
-

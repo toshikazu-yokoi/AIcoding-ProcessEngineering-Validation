@@ -7,6 +7,13 @@
 
 このディレクトリには、「人間によるコーディングとAIコーディングの違い：プロセスエンジニアリングアプローチによる体系化」に関する理論的基盤と研究成果を含む学術文書が格納されています。
 
+## 著者情報
+
+**執筆者**: 横井 利和 (Yokoi Toshikazu)  
+**所属**: 株式会社イノベーティブ・ソリューションズ (Innovative Solutions Inc.)  
+**連絡先**: yokoi@innovative-solutions.co.jp  
+**専門分野**: ソフトウェア工学、プロセスエンジニアリング、AI開発手法
+
 ## 文書一覧
 
 ### 1. 論文・理論文書
@@ -48,14 +55,14 @@
 
 ### 推奨引用形式（APA Style）
 ```
-[著者名]. (2025). 人間によるコーディングとAIコーディングの違い：プロセスエンジニアリングアプローチによる体系化. ProcessEngineering-ValidationProject. https://github.com/[repository]/ProcessEngineering-ValidationProject
+横井利和. (2025). 人間によるコーディングとAIコーディングの違い：プロセスエンジニアリングアプローチによる体系化. ProcessEngineering-ValidationProject. https://github.com/[repository]/ProcessEngineering-ValidationProject
 ```
 
 ### BibTeX形式
 ```bibtex
-@misc{processengineering2025,
+@misc{yokoi2025processengineering,
   title={人間によるコーディングとAIコーディングの違い：プロセスエンジニアリングアプローチによる体系化},
-  author={[著者名]},
+  author={横井利和},
   year={2025},
   publisher={GitHub},
   url={https://github.com/[repository]/ProcessEngineering-ValidationProject},
@@ -82,7 +89,7 @@
 
 ### 著作権情報
 ```
-Copyright (c) 2025 [著者名]
+Copyright (c) 2025 横井利和 (Yokoi Toshikazu)
 Licensed under CC BY-NC 4.0
 ```
 
@@ -147,9 +154,9 @@ Licensed under CC BY-NC 4.0
 ## 連絡先・問い合わせ
 
 ### 学術的問い合わせ
-- **研究内容**: [メールアドレス]
-- **共同研究**: [メールアドレス]
-- **査読依頼**: [メールアドレス]
+- **研究内容**: yokoi@innovative-solutions.co.jp
+- **共同研究**: yokoi@innovative-solutions.co.jp
+- **査読依頼**: yokoi@innovative-solutions.co.jp
 
 ### 技術的問い合わせ
 - **実装支援**: GitHub Issues

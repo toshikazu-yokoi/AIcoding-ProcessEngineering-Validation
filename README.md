@@ -14,10 +14,12 @@
 ```
 docs/
 ├── theory/                                    # 理論・研究系文書
-│   ├── human-vs-ai-coding-process-engineering-paper-v1.1.md # 論文本体v1.1
-│   ├── ai-coding-development-process-v1.2-part1.md # プロセス体系文書v1.2 Part1
-│   ├── ai-coding-development-process-v1.2-part2.md # プロセス体系文書v1.2 Part2
-│   ├── ai-coding-development-process-v1.2-part3.md # プロセス体系文書v1.2 Part3
+│   ├── human-vs-ai-coding-process-engineering-paper-v1.2.md # 論文本体v1.2（3分割）
+│   ├── human-vs-ai-coding-process-engineering-paper-v1.2-part2.md # 論文v1.2 Part2
+│   ├── human-vs-ai-coding-process-engineering-paper-v1.2-part3.md # 論文v1.2 Part3
+│   ├── ai-coding-development-process-v1.3-part1.md # プロセス体系文書v1.3 Part1
+│   ├── ai-coding-development-process-v1.3-part2.md # プロセス体系文書v1.3 Part2
+│   ├── ai-coding-development-process-v1.3-part3.md # プロセス体系文書v1.3 Part3
 │   ├── categorical-task-management-guide.md # 段階的タスク管理ガイド
 │   ├── quality-assurance-integration.md # 多層品質保証ガイド
 │   ├── experimental-validation-report.md     # 実験検証レポート
@@ -89,8 +91,8 @@ docs/
 [docs_document-format-specifications]: /docs/templates/document-format-specifications.md
 [docs_cline-process-engineering-rules]: /docs/templates/cline-process-engineering-rules.md
 [docs_cline-custom-instructions]: /docs/templates/cline-custom-instructions.md
-[docs_human-vs-ai-coding-process-engineering-paper]: /docs/theory/human-vs-ai-coding-process-engineering-paper-v1.1.md
-[docs_ai-coding-development-process]: /docs/theory/ai-coding-development-process-v1.2-part1.md
+[docs_human-vs-ai-coding-process-engineering-paper]: /docs/theory/human-vs-ai-coding-process-engineering-paper-v1.2.md
+[docs_ai-coding-development-process]: /docs/theory/ai-coding-development-process-v1.3-part1.md
 [docs_experimental-validation-report]: /docs/theory/experimental-validation-report.md
 [docs_reproducibility-validation-plan]: /docs/theory/reproducibility-validation-plan.md
 [docs_related-research-analysis]: /docs/theory/related-research-analysis.md
@@ -126,8 +128,8 @@ tests/
 ## 配置済み文書の概要
 
 ### 1. 論文・研究文書
-- **論文本体**: [段階的タスク管理アプローチによるAIコーディング手法の理論的基盤v1.1][docs_human-vs-ai-coding-process-engineering-paper]
-- **プロセス体系文書**: [`docs/ai-coding-development-process-v1.2`（3分割）][docs_ai-coding-development-process]
+- **論文本体**: [段階的タスク管理アプローチによるAIコーディング手法の理論的基盤v1.2][docs_human-vs-ai-coding-process-engineering-paper]
+- **プロセス体系文書**: [`docs/ai-coding-development-process-v1.3`（3分割）][docs_ai-coding-development-process]
 - **実験検証レポート**: [`docs/experimental-validation-report.md`][docs_experimental-validation-report]
 
 ### 2. 検証・分析文書
@@ -196,7 +198,7 @@ ls docs/
 2. **関連研究分析**で学術的位置づけを確認
    - [`docs/related-research-analysis.md`][docs_related-research-analysis]
 3. **プロセス体系文書**で実装詳細を把握
-   - [`docs/ai-coding-development-process-v1.2`（3分割）][docs_ai-coding-development-process]
+   - [`docs/ai-coding-development-process-v1.3`（3分割）][docs_ai-coding-development-process]
 
 ### 3. 実装準備
 

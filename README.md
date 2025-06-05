@@ -14,7 +14,7 @@
 ```
 docs/
 ├── theory/                                    # 理論・研究系文書
-│   ├── human-vs-ai-coding-process-engineering-paper-v1.2.md # 論文本体v1.2（3分割）
+│   ├── human-vs-ai-coding-process-engineering-paper-v1.2-part1.md # 論文本体v1.2（3分割）
 │   ├── human-vs-ai-coding-process-engineering-paper-v1.2-part2.md # 論文v1.2 Part2
 │   ├── human-vs-ai-coding-process-engineering-paper-v1.2-part3.md # 論文v1.2 Part3
 │   ├── ai-coding-development-process-v1.3-part1.md # プロセス体系文書v1.3 Part1
@@ -91,7 +91,7 @@ docs/
 [docs_document-format-specifications]: /docs/templates/document-format-specifications.md
 [docs_cline-process-engineering-rules]: /docs/templates/cline-process-engineering-rules.md
 [docs_cline-custom-instructions]: /docs/templates/cline-custom-instructions.md
-[docs_human-vs-ai-coding-process-engineering-paper]: /docs/theory/human-vs-ai-coding-process-engineering-paper-v1.2.md
+[docs_human-vs-ai-coding-process-engineering-paper]: /docs/theory/human-vs-ai-coding-process-engineering-paper-v1.2-part1.md
 [docs_ai-coding-development-process]: /docs/theory/ai-coding-development-process-v1.3-part1.md
 [docs_experimental-validation-report]: /docs/theory/experimental-validation-report.md
 [docs_reproducibility-validation-plan]: /docs/theory/reproducibility-validation-plan.md
